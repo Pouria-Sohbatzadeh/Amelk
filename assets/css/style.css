@@ -140,3 +140,103 @@
 .headlines__icon_text {
     font-size: 8px;
 }
+
+.zahedan {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.zahedan__headline {
+    font-size: 24px;
+    color: var(--primary_blue);
+}
+
+.zahedan__homes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.zahedan__homes_boxes {
+    display: flex;
+    gap: 10px;
+
+    width: 100%;
+    overflow: auto;
+}
+
+.zahedan__home {
+    height: 231px;
+    width: 172px;
+
+    padding: 0px 20px;
+
+    background-color: var(--box_blue);
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.zahedan__home_imgDiv {
+    width: 100%;
+}
+
+.zahedan__home_img {
+    width: 100%;
+}
+
+.zahedan__home_namePrice {
+    font-size: 14px;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    position: relative;
+
+    top: 2px;
+}
+
+.zahedan__home_price {
+    position: relative;
+
+    bottom: 2px;
+}
+
+.zahedan__home_rooms {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    font-size: 12px;
+    color: #fff;
+
+    position: relative;
+    top: 3px;
+
+}
+
+.zahedan__home_rooms_right {
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+}
+
+.zahedan__home_roomsIcons {
+    color: #FE8A71;
+}
