@@ -286,6 +286,8 @@
 
     border: 0.5px solid var(--primary_grey);
     border-radius: 100%;
+
+    cursor: pointer;
 }
 
 .zahedan__homes_searchingIII {
@@ -792,6 +794,8 @@
     font-family: "IRANSansWeb";
 
     background-color: #295FB7;
+
+    cursor: pointer;
 }
 
 .footer__menu {
