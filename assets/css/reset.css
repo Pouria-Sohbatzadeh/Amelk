@@ -5,8 +5,9 @@
     box-sizing: border-box;
   }
   body {
-    font-family: "IRTitr";
+    font-family: "IRANSansWeb";
     direction: rtl;
+
   }
   
   a {
@@ -19,4 +20,6 @@
 
   input {
     outline: none;
+    border: none;
+    font-family: "IRANSansWeb";
   }
