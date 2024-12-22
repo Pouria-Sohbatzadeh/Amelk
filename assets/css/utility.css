@@ -1,3 +1,13 @@
 .container {
     padding: 0px 10px;
 }
+
+.containerII {
+    padding: 0px 15px;
+}
+
+.headline {
+    color: var(--primary_blue);
+    font-weight: 700;
+    font-size: 20px;
+}
