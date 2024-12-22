@@ -339,8 +339,6 @@
 
     color: var(--headline_blue);
 
-    padding: 0px 15px;
-
     border: 7px solid transparent;
 
     display: flex;
@@ -663,7 +661,7 @@
 .footer {
     width: 100%;
 
-    padding: 70px 53px 0px;
+    padding: 70px 0px 0px;
 
     background-color: #104EB8;
 
@@ -688,6 +686,8 @@
     gap: 40px;
 
     width: 100%;
+
+    padding: 0px 53px;
 }
 
 .footer__address {
@@ -805,7 +805,7 @@
 
 .footer__menu {
     height: 72px;
-    width: 140%;
+    width: 100%;
 
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;

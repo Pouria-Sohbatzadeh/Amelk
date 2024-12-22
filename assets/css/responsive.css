@@ -161,7 +161,7 @@
     .suggestion {
         margin-top: 50px;
 
-        padding: 70px 129px;
+        padding: 70px 35px;
 
         height: 831px;
 
@@ -185,7 +185,9 @@
         width: 35%;
         height: 351px;
 
-        padding: 0px 17px;
+        padding: 50px 17px;
+
+        justify-content: flex-start;
     }
 
     .suggestion__boxeI_imgDiv {
@@ -207,13 +209,13 @@
     }
 
     .suggestion__boxeI__white_padding {
-        padding: 0px 36px;
+        padding: 50px 36px;
     }
 
     .specialSell {
         margin-top: 0px;
 
-        padding: 70px 129px 53px;
+        padding: 70px 35px 53px;
 
         background-color: var(--header_blue);
 
@@ -236,8 +238,8 @@
     }
 
     .specialSell__boxI {
-        width: 32.15%;
-        height: 468px;
+        width: 302.07px;
+        height: 371.97px;
 
         flex-grow: 1;
     }
@@ -289,7 +291,7 @@
     .lux_homes {
         width: 100%;
 
-        padding: 70px 129px 150px;
+        padding: 70px 35px 150px;
 
         gap: 50px;
     }
@@ -358,7 +360,7 @@
         width: 100%;
         height: auto;
 
-        padding: 30px 53px 0px;
+        padding: 120px 0px 0px;
 
         gap: 75px;
 
@@ -449,11 +451,11 @@
 
     .footer__menu {
         height: 185px;
-        width: 109%;
+        width: 100%;
 
         display: flex;
         justify-content: space-around;
-        gap: 130px;
+        gap: 30px;
     }
 
     .options {
