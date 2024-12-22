@@ -116,7 +116,7 @@
 
     padding: 0px 45px 0px 10px;
 
-    font-family: "IRTitr";
+    font-family: "IRANSansWeb";
     font-weight: 400;
 }
 
@@ -293,7 +293,7 @@
 .zahedan__homes_searchingIII {
     background-color: #104EB8;
 
-    border: NONE;
+    border: none;
 }
 
 .suggestion {
@@ -581,6 +581,11 @@
 
     background-image: url(../img/ads/spacejoy.png);
     background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.lux_homes__adI_ImageIII {
+    background-image: url(../img/ads/sandra-rei.png);
 }
 
 .lux_homes__adI_englishText, .lux_homes__adI_more {

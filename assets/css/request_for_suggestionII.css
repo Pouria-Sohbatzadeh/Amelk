@@ -1,0 +1,11 @@
+
+
+.footer {
+    padding: 0px 53px;
+
+    height: 90px;/* Thanks to overflow:none, The middle option of the menu will disappear without a big height */
+
+    background-color: transparent;
+
+    justify-content: flex-end;
+}
