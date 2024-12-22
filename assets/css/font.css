@@ -4,6 +4,12 @@
     src: url(../font/irtitr/IRTitr.ttf);
 }
 
+/* Quicksand */
+@font-face {
+    font-family: quicksand;
+    src: url(../font/quicksand/Quicksand-Regular.otf);
+}
+
 /* AirbnbCereal */
 @font-face {
     font-family: 'AirbnbCereal';

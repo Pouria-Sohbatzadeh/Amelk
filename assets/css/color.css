@@ -1,10 +1,13 @@
 :root {
     --header_blue: #2455A9;
-    --icon_black: #2C2C2E;
-    --primary_grey: #757575;
     --primary_blue: #2855A3;
     --box_blue: #295AAE;
-    --primary_grey: #5F5F5F;
     --headline_blue: #27478A;
     --light_blue: #ECF4FD;
+
+    --icon_black: #2C2C2E;
+    --primary_grey: #757575;
+    --secondary_grey: #E1E3E6;
+    --primary_grey: #5F5F5F;
+    
 }
