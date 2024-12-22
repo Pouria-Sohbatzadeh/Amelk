@@ -247,6 +247,7 @@
 
     font-family: "IRANSansWeb";
     font-size: 18px;
+    font-weight: 700;
 
     box-shadow: 0px 4px 4px 0px #00000040;
 }
@@ -267,7 +268,65 @@
     width: 116px;
 }
 
+.notice {
+    position: absolute;
 
+    top: 481px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 329px;
+    width: 307px;
+
+    padding-bottom: 20px;
+
+    background-color: #fff;
+
+    border-radius: 16px;
+
+    display: none;/* Turn this to flex */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.notice__texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.notice__text {
+    padding: 0px 30px;
+}
+
+.notice__small_text {
+    font-size: 14px;
+}
+
+.notice__button {
+    font-family: "IRANSansWeb";
+
+    width: 277.05px;
+    height: 60px;
+
+    background-color: #274A90;
+
+    color: #fff;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 16px;
+
+    outline: none;
+
+}
 
 .footer {
     padding: 0px 53px;
