@@ -671,8 +671,6 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-
-    overflow: hidden;
 }
 
 .footer__headline {

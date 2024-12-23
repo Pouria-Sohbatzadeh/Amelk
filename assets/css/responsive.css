@@ -1,10 +1,10 @@
 @media only screen and (min-width: 1024px) {
     .header {
-        height: 100px;
+        height: 86.65px;
         
         justify-content: space-between;
 
-        padding: 0px 70px;
+        padding: 0px 35px;
     }
 
     .header__right_menuOpener {
@@ -58,7 +58,7 @@
         border-radius: 23px;
 
         height: 81.25px;
-        width: 635.04px;
+        width: 448.08px;
 
         padding: 0px 60px 0px 10px;
 
@@ -75,7 +75,7 @@
     }
 
     .zahedan__headline {
-        font-size: 55px;
+        font-size: 40px;
         
         align-self: flex-start;
 
@@ -170,7 +170,7 @@
     }
 
     .suggestion__headline {
-        font-size: 55px;
+        font-size: 40px;
 
         align-self: flex-start;
     }
@@ -223,7 +223,7 @@
     }
 
     .specialSell__headline {
-        font-size: 55px;
+        font-size: 40px;
         color: #fff;
     }
 
@@ -299,7 +299,7 @@
     }
 
     .lux_homes__headline {
-        font-size: 55px;
+        font-size: 40px;
 
         align-self: flex-start;
     }
@@ -418,7 +418,7 @@
         width: 580px;
         height: 569.04px;
 
-        padding: 75px 55px;
+        padding: 75px 40px;
     }
 
     .footer__suggestion_box_headline {
@@ -458,6 +458,8 @@
         display: flex;
         justify-content: space-around;
         gap: 30px;
+
+        background-color: #fff;
     }
 
     .options {
