@@ -1,5 +1,5 @@
 .container {
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
 .containerII {
@@ -9,5 +9,5 @@
 .headline {
     color: var(--primary_blue);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
 }

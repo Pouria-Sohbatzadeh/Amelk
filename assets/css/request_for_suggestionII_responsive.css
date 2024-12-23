@@ -219,7 +219,7 @@
         text-align: center;
         gap: 20px;
     
-        color: #274A90;
+        color: var(--overused_blue);
     }
 
     .notice__textI {

@@ -23,3 +23,10 @@
     border: none;
     font-family: "IRANSansWeb";
   }
+
+  button {
+    border: none;
+    outline: none;
+
+    font-family: "IRANSansWeb";
+  }
