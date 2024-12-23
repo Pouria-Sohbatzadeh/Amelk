@@ -660,6 +660,7 @@
 
 .footer {
     width: 100%;
+    height: 700px;
 
     padding: 70px 0px 0px;
 
@@ -816,6 +817,12 @@
 
     padding: 0px 30px;
 
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    z-index: 100;
 }
 
 .options {

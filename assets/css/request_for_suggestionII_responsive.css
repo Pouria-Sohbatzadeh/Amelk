@@ -10,6 +10,10 @@
     .help__headline {        
         font-size: 40px;
     }
+
+    .help__headline_text  {
+        font-size: 40px;
+    }
     
     .help__forms {
         flex-direction: row-reverse;
@@ -181,6 +185,9 @@
         gap: 40px;
     
         margin-top: 100px;
+
+        padding-bottom: 300px;
+
     }
     
     .button {
@@ -240,12 +247,9 @@
         
         font-size: 32px;
     }
-    
-    .footer {        
-        margin-top: 30px;
-    }
 
     .footer__menu {    
         background-color: #DCEBF8;    
+        margin-top: 130px;
     }
 }

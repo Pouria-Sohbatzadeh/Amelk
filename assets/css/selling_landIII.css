@@ -24,6 +24,8 @@
 
     color: var(--overused_blue);
     font-weight: 700;
+
+    padding-bottom: 500px;
 }
 
 .assurance__textI {
@@ -63,11 +65,4 @@
     box-shadow: 0px 4px 4px 0px #00000040;
 
     cursor: pointer;
-}
-
-
-.footer {
-    margin-top: 85px;
-
-    background-color: transparent;
 }
