@@ -10,6 +10,12 @@
     src: url(../font/AirbnbCereal/AirbnbCereal_W_Bk.otf);
 }
 
+/* Lato */
+@font-face {
+    font-family: Lato;
+    src: url(../font/lato/Lato-Regular.ttf);
+}
+
 /* IRANSansWeb */
 @font-face {
     font-family: IRANSansWeb;
