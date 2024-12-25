@@ -278,7 +278,7 @@
     top: 156px;
     transform: translateX(-50%);
 
-    display: flex;/* Turn this to flex */
+    display: none;/* Turn this to flex */
     flex-direction: column;
     align-items: center;
     

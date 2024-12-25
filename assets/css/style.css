@@ -206,6 +206,7 @@
     width: 100%;
 }
 
+/* Here */
 .zahedan__home_namePrice {
     font-size: 14px;
     color: #fff;
@@ -273,6 +274,7 @@
 .zahedan__home_sizeLogo {
     width: 100%;
 }
+/* Here */
 
 .zahedan__homes_searching {
     display: flex;
@@ -361,10 +363,24 @@
 
 .suggestion__boxeI_imgDiv {
     width: 50px;
+
+    position: relative;
 }
 
 .suggestion__boxeI_img {
     width: 100%;
+}
+
+.suggestion__boxeI:hover .suggestion__boxeI_img {
+    display: none;
+}
+
+.suggestion__boxeI_img--white {
+    display: none;
+}
+
+.suggestion__boxeI:hover .suggestion__boxeI_img--white {
+    display: inline-block;
 }
 
 .suggestion__boxeI_texts {
@@ -580,6 +596,12 @@
     background-image: url(../img/ads/spacejoy.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
+
+    overflow: hidden;
+}
+
+.lux_homes__adI_ImageII {
+    background-image: url(../img/ads/aranprime.png);
 }
 
 .lux_homes__adI_ImageIII {
@@ -664,14 +686,15 @@
 
     padding: 70px 0px 0px;
 
-    background-color: #104EB8;
-
     color: #fff;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+
+    background-image: url(../img/footer_bg/r-architecture-KQPEhYweLrQ-unsplash\ 2.png);
+    background-size: auto 100%;
 }
 
 .footer__headline {

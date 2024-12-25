@@ -4,6 +4,11 @@
     src: url(../font/irtitr/IRTitr.ttf);
 }
 
+@font-face {
+    font-family: armita;
+    src: url(../font/armita/A\ Armita\ Black.ttf);
+}
+
 /* AirbnbCereal */
 @font-face {
     font-family: 'AirbnbCereal';
