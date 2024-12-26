@@ -30,10 +30,37 @@
             <!-- menu opener -->
             <label for="header__right_menuInput"><i class="fa-solid fa-bars header__right_menuOpener"></i></label> 
 
+            <!-- Menu, There need top be a JS, So that when the menu appears there's a black filter over the site -->
             <ul class="header__right_menu">
-                <li>
-                    <span>Hello</span>
-                </li>
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>خانه</span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>اجاره</span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>خرید </span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>فروش</span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box header__menu_options_box--no_border">
+                        <span>رهن</span>
+                    </li>
+                </a>
             </ul>
         </div>
         
@@ -45,7 +72,27 @@
         
         <!-- user account -->
         <div class="header__user">
-            <i class="fa-solid fa-user"></i>
+            <input type="checkbox" id="user" class="header__user_input">
+
+            <label for="user" class="header__user_opener"><i class="fa-solid fa-user"></i></label>
+
+            <!-- Menu, There need top be a JS, So that when the menu appears there's a black filter over the site -->
+            <ul class="header__user_menu">
+                <!-- 1st -->
+                <a href="#" class="header__user_menu_options">
+                    <li class="header__user_optionBox"><span>ورود</span></li>
+                </a>
+
+                <!-- 2nd -->
+                <a href="#" class="header__user_menu_options">
+                    <li class="header__user_optionBox"><span>نشان ها </span></li>
+                </a>
+
+                <!-- 3rd -->
+                <a href="#" class="header__user_menu_options">
+                    <li class="header__user_optionBox header__user_optionBox--border_none"><span>بازدیدهای اخیر </span></li>
+                </a>
+            </ul>
         </div>
 
     </header>

@@ -6,6 +6,23 @@ body {
     position: relative;
 }
 
+body::after {
+
+    content: "";
+    position: fixed; /* Ensures it covers the viewport */
+
+    top: 0;
+    left: 0; /* Ensures it starts from the left edge */
+
+    z-index: -4;
+
+    width: 100%; /* Covers the full width */
+    height: 100vh; /* Covers the full height of the viewport */
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+
 .login {
     display: flex;
     justify-content: center;
@@ -173,9 +190,11 @@ body {
     gap: 120px;
 
     position: relative;
+
+    padding-bottom: 100px;
 }
 
-.sign_check::after {
+/* .sign_check::after {
     content: "";
 
     position: absolute;
@@ -189,7 +208,7 @@ body {
 
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-}
+} */
 
 .sign_check__textI {
     color: #fff;

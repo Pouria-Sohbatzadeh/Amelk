@@ -6,21 +6,20 @@ body {
     position: relative;
 }
 
-body::before {
+body::after {
+
     content: "";
-    position: absolute;
+    position: fixed; /* Ensures it covers the viewport */
 
-    height: 100vh;
-    width: 100%;
+    top: 0;
+    left: 0; /* Ensures it starts from the left edge */
 
-    background-color: black;
+    z-index: -4;
 
-    opacity: 30%;
+    width: 100%; /* Covers the full width */
+    height: 100vh; /* Covers the full height of the viewport */
 
-    top: 0px;
-    left: 0px;
-
-    z-index: -2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 /* body::after {
@@ -199,8 +198,6 @@ body::before {
     display: flex;
     justify-content: center;
     gap: 10px;
-
-    background: linear-gradient(to bottom, #0E0E0E 30%, #000 80%);
 
     height: 126.3px;
 
