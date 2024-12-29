@@ -175,11 +175,7 @@
 }
 
 .lands__landI_icon_box {
-    border-left: 1.12px solid #C2C7CC;
-
     flex-shrink: 0;
-
-    padding-left: 15px;
 
     display: flex;
     justify-content: center;
@@ -188,11 +184,11 @@
     color: #0060F1;
 }
 
-.lands__landI_icon_box--border_none {
-    border: none;
+.lands__landI_icons_splitting {
+    height: 20px;
+    width: 1px;
 
-    padding-left: 0px;
-    padding-right: 5px;
+    background-color: #C2C7CC;
 }
 
 .distance {
