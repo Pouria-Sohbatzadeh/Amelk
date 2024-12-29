@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +14,13 @@
     <!-- Responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css"><!-- For the header and footer -->
     <link rel="stylesheet" href="assets/css/renting_landIV_responsive.css"><!-- For the webpage -->
-    
+
 
 
     <!-- FontAwsome address -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -29,7 +31,7 @@
             <input type="checkbox" id="header__right_menuInput">
 
             <!-- menu opener -->
-            <label for="header__right_menuInput"><i class="fa-solid fa-bars header__right_menuOpener"></i></label> 
+            <label for="header__right_menuInput"><i class="fa-solid fa-bars header__right_menuOpener"></i></label>
 
             <!-- Menu, There need top be a JS, So that when the menu appears there's a black filter over the site -->
             <ul class="header__right_menu">
@@ -64,13 +66,13 @@
                 </a>
             </ul>
         </div>
-        
+
         <!-- Amelk Logo -->
         <div class="header__site_logo">
             <span>Amelk</span>
             <img src="assets/img/amelk_logo.png" alt="Amelk Logo" class="header__logo_img">
         </div>
-        
+
         <!-- user account -->
         <div class="header__user">
             <input type="checkbox" id="user" class="header__user_input">
@@ -91,7 +93,8 @@
 
                 <!-- 3rd -->
                 <a href="#" class="header__user_menu_options">
-                    <li class="header__user_optionBox header__user_optionBox--border_none"><span>بازدیدهای اخیر </span></li>
+                    <li class="header__user_optionBox header__user_optionBox--border_none"><span>بازدیدهای اخیر </span>
+                    </li>
                 </a>
             </ul>
         </div>
@@ -100,797 +103,360 @@
 
     <!-- Introduction to the Page -->
     <section class="renting_page container">
+        <!-- The Default Headline -->
         <i class="renting_page_icon fa-solid fa-chevron-right"></i>
+
         <span class="renting_page_headline headline">اجاره یک ملک</span>
+
+        <!-- In JS, On of these headline must Appear when one of the Buttons is Clicked, And the Gap between the Icon and the Headline must become 20px -->
+        <!-- The Headline shown when میخام ملک اجاره کنم is clicked on -->
+        <span class="renting_page_headline renting_page_headline--hidden headline">ملک برای اجاره دارم</span>
+
+        <!-- The Headline shown when ملک برای  اجاره دارم is clicked on -->
+        <span class="renting_page_headline renting_page_headline--hidden headline">میخام ملک اجاره کنم</span>
+
     </section>
 
-    <!-- The Buttons -->
-     <section class="wants container">
+    <!-- The Buttons, On JS, Both of them must disappear when one of them is clicked on. -->
+    <section class="wants container">
         <!-- Button 1 -->
         <button class="wants__pay_for_rent">میخام ملک اجاره کنم</button>
-        
+
         <!-- Button 2 -->
-        <button class="wants__can_rent">ملک برای  اجاره دارم </button>
-
-    </section>
-
-    <!-- Product Showcase (Only Appears For Desktop) -->
-    <section class="products">
-        <!-- Box -->
-        <div class="products__blue_box">
-
-            <div class="products__boxes">
-
-                <!-- 1st box -->
-                <div class="products__box">
-                    <!-- Image-->
-                    <div class="products__box_imgDiv">
-                        <!-- Picture -->
-                        <img src="./assets/img/apartments/image (27).png" alt="" class="products__box_img">
-
-                        <!-- Star Box -->
-                        <div class="products__box_starDiv">
-
-                            <!-- Default -->
-                            <i class="products__box_star fa-regular fa-star"></i>
-
-                            <!-- Appears on hover -->
-                            <i class="products__box_star products__box_star--hidden fa-solid fa-star"></i>
-
-                        </div>
-                    </div>
-
-                    <!-- name of house and price -->
-                    <div class="products__home_namePrice">
-                        <!-- name -->
-                        <span>آدرس خیابان دانشگاه</span>
-                        
-                        <!-- price -->
-                        <span class="products__home_price">$267000</span>
-                    </div>
-
-                    <!-- Icons and Texts -->
-                    <div class="products__boxI_categories">
-
-                        <!-- 1st -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>360m</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-globe"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">متراژ</span>
-                        </div>
-
-                        <!-- 2nd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>3</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">سرویس بهداشتی</span>
-                        </div>
-
-                        <!-- 3rd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>5</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-bed"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">اتاق خواب</span>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <!-- 2nd box -->
-                <div class="products__box">
-                    <!-- Image-->
-                    <div class="products__box_imgDiv">
-                        <!-- Picture -->
-                        <img src="./assets/img/apartments/image (27).png" alt="" class="products__box_img">
-
-                        <!-- Star Box -->
-                        <div class="products__box_starDiv">
-
-                            <!-- Default -->
-                            <i class="products__box_star fa-regular fa-star"></i>
-
-                            <!-- Appears on hover -->
-                            <i class="products__box_star products__box_star--hidden fa-solid fa-star"></i>
-
-                        </div>
-                    </div>
-
-                    <!-- name of house and price -->
-                    <div class="products__home_namePrice">
-                        <!-- name -->
-                        <span>آدرس خیابان دانشگاه</span>
-                        
-                        <!-- price -->
-                        <span class="products__home_price">$267000</span>
-                    </div>
-
-                    <!-- Icons and Texts -->
-                    <div class="products__boxI_categories">
-
-                        <!-- 1st -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>360m</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-globe"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">متراژ</span>
-                        </div>
-
-                        <!-- 2nd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>3</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">سرویس بهداشتی</span>
-                        </div>
-
-                        <!-- 3rd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>5</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-bed"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">اتاق خواب</span>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <!-- 3rd box -->
-                <div class="products__box">
-                    <!-- Image-->
-                    <div class="products__box_imgDiv">
-                        <!-- Picture -->
-                        <img src="./assets/img/apartments/image (27).png" alt="" class="products__box_img">
-
-                        <!-- Star Box -->
-                        <div class="products__box_starDiv">
-
-                            <!-- Default -->
-                            <i class="products__box_star fa-regular fa-star"></i>
-
-                            <!-- Appears on hover -->
-                            <i class="products__box_star products__box_star--hidden fa-solid fa-star"></i>
-
-                        </div>
-                    </div>
-
-                    <!-- name of house and price -->
-                    <div class="products__home_namePrice">
-                        <!-- name -->
-                        <span>آدرس خیابان دانشگاه</span>
-                        
-                        <!-- price -->
-                        <span class="products__home_price">$267000</span>
-                    </div>
-
-                    <!-- Icons and Texts -->
-                    <div class="products__boxI_categories">
-
-                        <!-- 1st -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>360m</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-globe"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">متراژ</span>
-                        </div>
-
-                        <!-- 2nd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>3</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">سرویس بهداشتی</span>
-                        </div>
-
-                        <!-- 3rd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>5</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-bed"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">اتاق خواب</span>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <!-- 4th box -->
-                <div class="products__box">
-                    <!-- Image-->
-                    <div class="products__box_imgDiv">
-                        <!-- Picture -->
-                        <img src="./assets/img/apartments/image (27).png" alt="" class="products__box_img">
-
-                        <!-- Star Box -->
-                        <div class="products__box_starDiv">
-
-                            <!-- Default -->
-                            <i class="products__box_star fa-regular fa-star"></i>
-
-                            <!-- Appears on hover -->
-                            <i class="products__box_star products__box_star--hidden fa-solid fa-star"></i>
-
-                        </div>
-                    </div>
-
-                    <!-- name of house and price -->
-                    <div class="products__home_namePrice">
-                        <!-- name -->
-                        <span>آدرس خیابان دانشگاه</span>
-                        
-                        <!-- price -->
-                        <span class="products__home_price">$267000</span>
-                    </div>
-
-                    <!-- Icons and Texts -->
-                    <div class="products__boxI_categories">
-
-                        <!-- 1st -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>360m</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-globe"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">متراژ</span>
-                        </div>
-
-                        <!-- 2nd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>3</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">سرویس بهداشتی</span>
-                        </div>
-
-                        <!-- 3rd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>5</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-bed"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">اتاق خواب</span>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <!-- 5th box -->
-                <div class="products__box">
-                    <!-- Image-->
-                    <div class="products__box_imgDiv">
-                        <!-- Picture -->
-                        <img src="./assets/img/apartments/image (27).png" alt="" class="products__box_img">
-
-                        <!-- Star Box -->
-                        <div class="products__box_starDiv">
-
-                            <!-- Default -->
-                            <i class="products__box_star fa-regular fa-star"></i>
-
-                            <!-- Appears on hover -->
-                            <i class="products__box_star products__box_star--hidden fa-solid fa-star"></i>
-
-                        </div>
-                    </div>
-
-                    <!-- name of house and price -->
-                    <div class="products__home_namePrice">
-                        <!-- name -->
-                        <span>آدرس خیابان دانشگاه</span>
-                        
-                        <!-- price -->
-                        <span class="products__home_price">$267000</span>
-                    </div>
-
-                    <!-- Icons and Texts -->
-                    <div class="products__boxI_categories">
-
-                        <!-- 1st -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>360m</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-globe"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">متراژ</span>
-                        </div>
-
-                        <!-- 2nd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>3</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">سرویس بهداشتی</span>
-                        </div>
-
-                        <!-- 3rd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>5</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-bed"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">اتاق خواب</span>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <!-- 6th box -->
-                <div class="products__box">
-                    <!-- Image-->
-                    <div class="products__box_imgDiv">
-                        <!-- Picture -->
-                        <img src="./assets/img/apartments/image (27).png" alt="" class="products__box_img">
-
-                        <!-- Star Box -->
-                        <div class="products__box_starDiv">
-
-                            <!-- Default -->
-                            <i class="products__box_star fa-regular fa-star"></i>
-
-                            <!-- Appears on hover -->
-                            <i class="products__box_star products__box_star--hidden fa-solid fa-star"></i>
-
-                        </div>
-                    </div>
-
-                    <!-- name of house and price -->
-                    <div class="products__home_namePrice">
-                        <!-- name -->
-                        <span>آدرس خیابان دانشگاه</span>
-                        
-                        <!-- price -->
-                        <span class="products__home_price">$267000</span>
-                    </div>
-
-                    <!-- Icons and Texts -->
-                    <div class="products__boxI_categories">
-
-                        <!-- 1st -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>360m</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-globe"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">متراژ</span>
-                        </div>
-
-                        <!-- 2nd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>3</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">سرویس بهداشتی</span>
-                        </div>
-
-                        <!-- 3rd -->
-                        <div class="products__boxI_categoryI">
-
-                            <!-- Icons and Text -->
-                            <div class="products__boxI_category_icon">
-                                <span>5</span>
-                                <i class="products__boxI_category_actualIcon fa-solid fa-bed"></i>
-                            </div>
-
-                            <!-- Category -->
-                            <span class="category">اتاق خواب</span>
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="products__switchers">
-
-                <!-- Right Switcher -->
-                <button class="products__switcher">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-
-                <!-- Left Switcher -->
-                <button class="products__switcher">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                
-            </div>
-        </div>
+        <button class="wants__can_rent">ملک برای اجاره دارم </button>
 
     </section>
 
     <!-- The Page shown when میخام ملک اجاره کنم is clicked on -->
-    <section class="pay_rent">
+    <div class="pay_rent_holder">
+        <section class="pay_rent">
 
-        <!-- Personal Info -->
-        <div class="pay_rent__user_info">
+            <!-- Personal Info -->
+            <div class="pay_rent__user_info">
 
-            <!-- Name -->
-            <div class="pay_rent__user_info_form">
-                <label for="" class="pay_rent__user_info_formText">نام و نام خانوادگی</label>
-                <input type="text" class="pay_rent__user_info_name">
+                <!-- Name -->
+                <div class="pay_rent__user_info_form">
+                    <label for="" class="pay_rent__user_info_formText">نام و نام خانوادگی</label>
+                    <input type="text" class="pay_rent__user_info_name">
+                </div>
+
+                <!-- Phone -->
+                <div class="pay_rent__user_info_form">
+                    <label for="" class="pay_rent__user_info_formText">شماره تماس</label>
+                    <input type="tel" class="pay_rent__user_info_phone">
+                </div>
+
+                <!-- City -->
+                <div class="pay_rent__user_info_form">
+                    <label for="" class="pay_rent__user_info_formText">شهر/محله</label>
+                    <input type="text" class="pay_rent__user_info_city">
+                </div>
+
             </div>
 
-            <!-- Phone -->
-            <div class="pay_rent__user_info_form">
-                <label for="" class="pay_rent__user_info_formText">شماره تماس</label>
-                <input type="tel" class="pay_rent__user_info_phone">
-            </div>
+            <!-- The area, Rent -->
+            <div class="pay_rent__area_rent">
 
-            <!-- City -->
-            <div class="pay_rent__user_info_form">
-                <label for="" class="pay_rent__user_info_formText">شهر/محله</label>
-                <input type="text" class="pay_rent__user_info_city">
-            </div>
+                <!-- The Area -->
+                <div class="pay_rent__area">
 
-        </div>
-
-        <!-- The Scales -->
-        <div class="pay_rent__scales">
-
-            <!-- 1st, حداقل متراژ -->
-            <div class="pay_rent__scale_holder">
-                <span class="pay_rent__scale_text">حداقل متراژ</span>
+                    <!-- Headline -->
+                    <span class="pay_rent__area_headline headline">متراژ</span>
                 
-                <div class="pay_rent__scale_organizer">
-                    <div class="pay_rent__scale_ball"></div>
-                    <div class="pay_rent__scale_line"></div>
-                    <div class="pay_rent__scale_ball"></div>
-                </div>
-
-                <!-- The blue Squares -->
-                <div class="pay_rent__scale_squares">
-
-                    <!-- Square 1 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
+                    <!-- Minimal And Maximum -->
+                    <div class="pay_rent__area_miniMax">
+                            
+                        <!-- Minimal -->
+                        <div class="pay_rent__area_minForm_complete">
+                            <span class="pay_rent__area_minForm_textI">حداقل متراژ</span>
+                            <div class="pay_rent__min_form_holder">
+                                <span class="pay_rent__min_form_text">از</span>
+                                <input type="number" class="pay_rent__min_form">
+                            </div>
+                        </div>
+                        
+                        <!-- Maximum -->
+                        <div class="pay_rent__area_maxForm_complete">   
+                            <span class="pay_rent__area_minForm_textI">حداکثر متراژ</span>
+                           
+                            <div class="pay_rent__max_form_holder">
+                                <span class="pay_rent__max_form_text">تا</span>
+                                <input type="number" class="pay_rent__max_form">
+                            </div>
+                        </div>
+                            
                     </div>
-
-                    <!-- Square 2 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 2nd, حداکثر متراژ -->
-            <div class="pay_rent__scale_holder">
-                <span class="pay_rent__scale_text">حداکثر متراژ</span>
                 
-                <div class="pay_rent__scale_organizer">
-                    <div class="pay_rent__scale_ball"></div>
-                    <div class="pay_rent__scale_line"></div>
-                    <div class="pay_rent__scale_ball"></div>
                 </div>
 
-                <!-- The blue Squares -->
-                <div class="pay_rent__scale_squares">
+                <!-- Rent -->
+                <div class="pay_rent__area">
 
-                    <!-- Square 1 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
-                    </div>
-
-                    <!-- Square 2 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 3rd, حداکثر پول پیش -->
-            <div class="pay_rent__scale_holder">
-                <span class="pay_rent__scale_text">حداکثر پول پیش</span>
+                    <!-- Headline -->
+                    <span class="pay_rent__area_headline headline">اجاره بها</span>
                 
-                <div class="pay_rent__scale_organizer">
-                    <div class="pay_rent__scale_ball"></div>
-                    <div class="pay_rent__scale_line"></div>
-                    <div class="pay_rent__scale_ball"></div>
-                </div>
-
-                <!-- The blue Squares -->
-                <div class="pay_rent__scale_squares">
-
-                    <!-- Square 1 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
+                    <!-- Minimal And Maximum -->
+                    <div class="pay_rent__area_miniMax">
+                            
+                        <!-- Minimal -->
+                        <div class="pay_rent__area_minForm_complete">
+                            <span class="pay_rent__area_minForm_textI">حداکثر پول پیش</span>
+                            <div class="pay_rent__min_form_holder">
+                                <span class="pay_rent__min_form_text">از</span>
+                                <input type="number" class="pay_rent__min_form">
+                            </div>
+                        </div>
+                        
+                        <!-- Maximum -->
+                        <div class="pay_rent__area_maxForm_complete">   
+                            <span class="pay_rent__area_minForm_textI">حداکثر اجاره</span>
+                           
+                            <div class="pay_rent__max_form_holder">
+                                <span class="pay_rent__max_form_text">تا</span>
+                                <input type="number" class="pay_rent__max_form">
+                            </div>
+                        </div>
+                            
                     </div>
-
-                    <!-- Square 2 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 4th, حداکثر اجاره -->
-            <div class="pay_rent__scale_holder">
-                <span class="pay_rent__scale_text">حداکثر اجاره</span>
                 
-                <div class="pay_rent__scale_organizer">
-                    <div class="pay_rent__scale_ball"></div>
-                    <div class="pay_rent__scale_line"></div>
-                    <div class="pay_rent__scale_ball"></div>
                 </div>
 
-                <!-- The blue Squares -->
-                <div class="pay_rent__scale_squares">
-
-                    <!-- Square 1 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
-                    </div>
-
-                    <!-- Square 2 -->
-                    <div class="pay_rent__scale_square pay_rent__scale_square--blue">
-
-                    </div>
-
-                </div>
             </div>
-
-        </div>
-
-        <!-- The Number of People -->
-        <div class="pay_rent__people">
             
-            <!-- Headline -->
-            <span class="pay_rent__people__headline">تعداد افراد خانواده</span>
+            <!-- People and Rooms -->
+            <div class="pay_rent__people_rooms">
+                <!-- The Number of People -->
+                <div class="pay_rent__people">
 
-            <!-- The number of possible people -->
-            <div class="pay_rent__people_number">
-                <!-- The More Box -->
-                <div class="pay_rent__people_number_more">
-                    <div class="pay_rent__people_moreIcon_holder">
-                        <i class="pay_rent__people_moreIcon fa-solid fa-angle-down"></i>
+                    <!-- Headline -->
+                    <span class="pay_rent__people__headline">تعداد افراد خانواده</span>
+
+                    <!-- The number of possible people -->
+                    <div class="pay_rent__people_number">
+                        <!-- The More Box -->
+                        <div class="pay_rent__people_number_more">
+                            <div class="pay_rent__people_moreIcon_holder">
+                                <i class="pay_rent__people_moreIcon fa-solid fa-angle-down"></i>
+                            </div>
+                            <span class="pay_rent__people_number_moreText">بیشتر</span>
+                        </div>
+
+                        <!-- 4th -->
+                        <div class="pay_rent__people_number_box">
+                            <span>4</span>
+                        </div>
+
+                        <!-- 3rd -->
+                        <div class="pay_rent__people_number_box">
+                            <span>3</span>
+                        </div>
+
+                        <!-- 2nd -->
+                        <div class="pay_rent__people_number_box">
+                            <span>2</span>
+                        </div>
+
+                        <!-- 1st -->
+                        <div class="pay_rent__people_number_box">
+                            <span>1</span>
+                        </div>
                     </div>
-                    <span class="pay_rent__people_number_moreText">بیشتر</span>
                 </div>
 
-                <!-- 4th -->
-                <div class="pay_rent__people_number_box">
-                    <span>4</span>
-                </div>
+                <!-- Number of Rooms -->
+                <section class="rooms">
 
-                <!-- 3rd -->
-                <div class="pay_rent__people_number_box">
-                    <span>3</span>
+                    <!-- Headline -->
+                    <span class="rooms__headline headline">تعداد اتاق خواب</span>
+
+                    <!-- Rooms -->
+                    <div class="rooms__numbers">
+
+                        <a href="#">
+                            <div class="rooms__more">
+                                <div class="rooms__more_icon_box">
+                                    <i class="rooms__more_icon fa-solid fa-angle-down"></i>
+                                </div>
+                                <span>بیشتر</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>4</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>3</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>2</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>1</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- The Button -->
+            <div class="pay_rent__buttons">
+                <div class="pay_rent__button">ارسال</div>
+
+                <div class="pay_rent__button">جستجوی ملک</div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- The Page shown when ملک برای  اجاره دارم is clicked on -->
+    <div class="renting_holder">
+        <section class="renting">
+
+            <!-- Location -->
+            <div class="renting__location">
+
+                <!-- Headline -->
+                <span class="renting__location_headline">موقعیت ملک شما</span>
+
+                <div class="renting__location_examples">
+
+                    <div class="renting__location_vila building_example"><span>ویلا </span></div>
+
+                    <div class="renting__location_apartment building_example"><span>آپارتمان</span></div>
+
+                    <div class="renting__location_buisness building_example"><span>تجاری</span></div>
+
+                </div>
+            </div>
+
+            <!-- The Forms -->
+            <div class="renting__forms">
+
+                <!-- 1st -->
+                <div class="renting__form_holder">
+                    <span class="renting__form_headline">متراژ</span>
+                    <input type="text" class="renting__form">
                 </div>
 
                 <!-- 2nd -->
-                <div class="pay_rent__people_number_box">
-                    <span>2</span>
+                <div class="renting__form_holder">
+                    <span class="renting__form_headline">پول پیش</span>
+                    <input type="number" class="renting__form">
                 </div>
 
-                <!-- 1st -->
-                <div class="pay_rent__people_number_box">
-                    <span>1</span>
+                <!-- 3rd -->
+                <div class="renting__form_holder">
+                    <span class="renting__form_headline">مبلغ اجاره </span>
+                    <input type="number" class="renting__form">
                 </div>
-            </div>
-        </div>
 
-        <!-- The Button -->
-        <div class="pay_rent__button">ارسال</div>
-
-    </section>
-
-    <!-- The Page shown when ملک برای  اجاره دارم is clicked on -->
-    <section class="renting">
-
-        <!-- Location -->
-        <div class="renting__location">
-
-            <!-- Headline -->
-            <span class="renting__location_headline">موقعیت ملک شما</span>
-        
-            <div class="renting__location_examples">
-
-                <div class="renting__location_vila building_example"><span>ویلا </span></div>
-
-                <div class="renting__location_apartment building_example"><span>آپارتمان</span></div>
-
-                <div class="renting__location_buisness building_example"><span>تجاری</span></div>
-
-            </div>
-        </div>
-
-        <!-- The Forms -->
-        <div class="renting__forms">
-
-            <!-- 1st -->
-            <div class="renting__form_holder">
-                <span class="renting__form_headline">متراژ</span>
-                <input type="text" class="renting__form">
-            </div>
-
-            <!-- 2nd -->
-            <div class="renting__form_holder">
-                <span class="renting__form_headline">پول پیش</span>
-                <input type="number" class="renting__form">
-            </div>
-
-            <!-- 3rd -->
-            <div class="renting__form_holder">
-                <span class="renting__form_headline">مبلغ اجاره </span>
-                <input type="number" class="renting__form">
-            </div>
-
-            <!-- 4th -->
-            <div class="renting__form_holder">
-                <span class="renting__form_headline">حق</span>
-                <input type="number" class="renting__form">
-            </div>
-
-        </div>
-
-        <!-- Copied and Adjusted from request_for_suggestionII.html -->
-        <div class="for_desktop">
-            <!-- facilities -->
-            <section class="facilities">
-    
-                <!-- headline -->
-                <span class="facilities__headline headline">امکانات</span>
-            
-                <!-- facility Examples -->
-                <div class="facilities__examples">
-    
-                    <!-- elevator -->
-                    <div class="facilities__boxesI facilities__boxes ">
-                        <i class="facilities__boxes_icons fa-solid fa-building"></i>
-                        <span>آسانسور</span>
-                    </div>
-    
-    
-                    <div class="facilities__boxesII facilities__boxes ">
-                        <i class="facilities__boxes_icons fa-solid fa-building"></i>
-                        <span>پارکینگ</span>
-                    </div>
-    
-                    <div class="facilities__boxesIII facilities__boxes ">
-                        <i class="facilities__boxes_icons fa-solid fa-house-chimney-window"></i>
-                        <span>انباری \ بالکن</span>
-                    </div>
-    
+                <!-- 4th -->
+                <div class="renting__form_holder">
+                    <span class="renting__form_headline">حق</span>
+                    <input type="number" class="renting__form">
                 </div>
-            </section>
-    
-            <!-- Number of Rooms -->
-            <section class="rooms">
-                
-                <!-- Headline -->
-                <span class="rooms__headline headline">تعداد اتاق خواب</span>
-            
-                <!-- Rooms -->
-                <div class="rooms__numbers">
-    
-                    <a href="#">
-                        <div class="rooms__more">
-                            <div class="rooms__more_icon_box">
-                                <i class="rooms__more_icon fa-solid fa-angle-down"></i>
+
+            </div>
+
+            <!-- Copied and Adjusted from request_for_suggestionII.html -->
+            <div class="for_desktop">
+                <!-- facilities -->
+                <section class="facilities">
+
+                    <!-- headline -->
+                    <span class="facilities__headline headline">امکانات</span>
+
+                    <!-- facility Examples -->
+                    <div class="facilities__examples">
+
+                        <!-- elevator -->
+                        <div class="facilities__boxesI facilities__boxes ">
+                            <i class="facilities__boxes_icons fa-solid fa-building"></i>
+                            <span>آسانسور</span>
+                        </div>
+
+
+                        <div class="facilities__boxesII facilities__boxes ">
+                            <i class="facilities__boxes_icons fa-solid fa-building"></i>
+                            <span>پارکینگ</span>
+                        </div>
+
+                        <div class="facilities__boxesIII facilities__boxes ">
+                            <i class="facilities__boxes_icons fa-solid fa-house-chimney-window"></i>
+                            <span>انباری \ بالکن</span>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Number of Rooms -->
+                <section class="rooms">
+
+                    <!-- Headline -->
+                    <span class="rooms__headline headline">تعداد اتاق خواب</span>
+
+                    <!-- Rooms -->
+                    <div class="rooms__numbers">
+
+                        <a href="#">
+                            <div class="rooms__more">
+                                <div class="rooms__more_icon_box">
+                                    <i class="rooms__more_icon fa-solid fa-angle-down"></i>
+                                </div>
+                                <span>بیشتر</span>
                             </div>
-                            <span>بیشتر</span>
-                        </div>
-                    </a>
-    
-                    <a href="#">
-                        <div class="rooms__numbers_boxes">
-                            <span>4</span>
-                        </div>
-                    </a>
-    
-                    <a href="#">
-                        <div class="rooms__numbers_boxes">
-                            <span>3</span>
-                        </div>
-                    </a>
-    
-                    <a href="#">
-                        <div class="rooms__numbers_boxes">
-                            <span>2</span>
-                        </div>
-                    </a>
-    
-                    <a href="#">
-                        <div class="rooms__numbers_boxes">
-                            <span>1</span>
-                        </div>
-                    </a>
-    
-                </div>
-            </section>
-    
-        </div>
+                        </a>
 
-        <!-- The Button -->
-        <div class="renting__button">ارسال</div>
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>4</span>
+                            </div>
+                        </a>
 
-    </section>
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>3</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>2</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rooms__numbers_boxes">
+                                <span>1</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- The Button -->
+            <div class="renting__button">ارسال</div>
+
+        </section>
+    </div>
+
 
     <!-- For distancing the menu from the rest of the webpage -->
     <div class="distance"></div>
-     
+
     <!-- Menu -->
     <ul class="footer__menu">
         <!-- 1st -->
@@ -928,7 +494,8 @@
             </li>
         </a>
     </ul>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
 </body>
+
 </html>

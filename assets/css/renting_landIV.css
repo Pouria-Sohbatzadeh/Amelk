@@ -10,6 +10,10 @@
     font-size: 20px;
 }
 
+.renting_page_headline--hidden {
+    display: none;
+}
+
 .wants {
     display: flex;
     flex-direction: column;
@@ -40,27 +44,20 @@
     border: 7px solid #034AFF;
 }
 
-.products {
-    display: none;
+.pay_rent_holder {
+    display: flex;/* Turn this to flex */
+
+    justify-content: center;
+
+    width: 100%;
 }
 
 .pay_rent {
-    padding: 50px 7px;
+    padding: 50px 30px;
 
-    width: 329px;
-    height: 1160px;
+    width: 100%;
 
-    background-color: #fff;
-
-    border-radius: 30px;
-
-    position: absolute;
-
-    left: 50%;
-    top: 156px;
-    transform: translateX(-50%);
-
-    display: none;/* Turn this to flex */
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -98,61 +95,100 @@
     padding: 0px 10px;
 }
 
-.pay_rent__scales {
-    width: 100%;
-
+/* Here */
+.pay_rent__area_rent {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 
-    margin-top: 45px;
+    width: 100%;
+
 }
 
-.pay_rent__scale_holder {
+.pay_rent__area {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    width: 100%;
+
+    margin-top: 30px;
 }
 
-.pay_rent__scale_text {
-    font-size: 11px;
+.pay_rent__area_miniMax {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+    font-size: 10px;
+    font-weight: 700;
     color: #878686;
 }
 
-.pay_rent__scale_organizer {
+.pay_rent__area_minForm_complete, .pay_rent__area_maxForm_complete {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.pay_rent__scale_ball {
-    height: 24px;
-    width: 27px;
-
-    border: 1px solid var(--secondary_grey);
-    border-radius: 100%;
+.pay_rent__area_minForm_textI {
+    font-size: 10px;
 }
 
-.pay_rent__scale_line {
+.pay_rent__area_forms_holder {
+    display: flex;
+
     width: 100%;
 
-    border-top: 1px solid var(--secondary_grey);
+    position: relative;
+
+    padding-right: 15px;
 }
 
-.pay_rent__scale_squares {
+.pay_rent__min_form_holder, .pay_rent__max_form_holder {
+    width: 132.5px;
+
+    flex-grow: 1;
+
+    height: 51px;
+
+    position: relative;
+}
+
+.pay_rent__min_form_text, .pay_rent__max_form_text {
+    position: absolute;
+
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.pay_rent__min_form, .pay_rent__max_form {
     width: 100%;
+    height: 100%;
 
-    display: flex;
-    justify-content: space-between;
+    border: 1px solid #D3D3D3;
+
+    padding: 0px 20px 0px 10px;
 }
 
-.pay_rent__scale_square--blue {
-    height: 21px;
-    width: 36px;
+.pay_rent__min_form {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
-    background-color: #E5F2FF;
+.pay_rent__max_form {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
-    border-radius: 5px;
+
+
+/* Here */
+
+.pay_rent__people_rooms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .pay_rent__people {
@@ -166,14 +202,16 @@
 }
 
 .pay_rent__people__headline {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
-    color: #878686;
+    color: var(--primary_blue);
 }
 
 .pay_rent__people_number {
     display: flex;
-    justify-content: space-between;
+    gap: 5px;
+
+    width: 100%;
 
     color: var(--last_grey);
 }
@@ -187,14 +225,14 @@
     border: 1px solid var(--secondary_grey);
     border-radius: 16px;
 
-    height: 57px;
-    width: 78.54px;
+    height: 53.87px;
+    width: 75.61px;
 
     cursor: pointer;
 }
 
 .pay_rent__people_moreIcon_holder {
-    border: 1px solid var(--last_grey);
+    border: 2px solid var(--last_grey);
     border-radius: 100%;
 
     display: flex;
@@ -226,19 +264,27 @@
     border-radius: 16px;
 
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
 
-    height: 52px;
-    width: 56.94px;
+    height: 49.15px;
+    width: 54.82px;
 
     cursor: pointer;
+}
+
+.pay_rent__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
 }
 
 .pay_rent__button {
     box-shadow: 0px 4px 4px 0px #00000040;
 
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 
     cursor: pointer;
@@ -262,23 +308,19 @@
     flex-shrink: 0;
 }
 
+.renting_holder {
+    display: none;/* Turn this to Flex when the ملک برای  اجاره دارم button is clicked on */
+    justify-content: center;
+
+    width: 100%;
+}
+
 .renting {
-    padding: 50px 7px;
+    padding: 50px 30px;
 
-    width: 329px;
-    height: 1034px;
+    width: 100%;
 
-    background-color: #fff;
-
-    border-radius: 30px;
-
-    position: absolute;
-
-    left: 50%;
-    top: 156px;
-    transform: translateX(-50%);
-
-    display: none;/* Turn this to flex */
+    display: flex;/* Turn this to flex */
     flex-direction: column;
     align-items: center;
     
@@ -386,9 +428,8 @@
 }
 
 .rooms__numbers {
-    gap: 0px;
-
-    justify-content: space-between;
+    display: flex;
+    gap: 5px;
 
     width: 100%;
 }
@@ -434,6 +475,5 @@
 }
 
 .distance {
-    width: 100%;
-    height: 1300px;
+    margin-top: 80px;
 }
