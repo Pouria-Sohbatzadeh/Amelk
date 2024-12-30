@@ -7,8 +7,8 @@
     <title>Amelk - اجاره ملک</title>
     <!-- css address -->
     <link rel="stylesheet" href="assets/css/style.css"> <!-- For the Header and the Footer menu -->
-    <link rel="stylesheet" href="assets/css/request_for_suggestionII.css">
-    <!-- For the امکانات and تعداد اتاق خواب -->
+    <link rel="stylesheet" href="assets/css/request_for_suggestionII.css"><!-- For the امکانات and تعداد اتاق خواب -->
+
     <link rel="stylesheet" href="assets/css/renting_landIV.css">
 
     <!-- Responsive -->
@@ -329,14 +329,25 @@
                 <!-- Headline -->
                 <span class="renting__location_headline">موقعیت ملک شما</span>
 
-                <div class="renting__location_examples">
+                <!-- The Examples -->
+                <div class="renting__locations">
 
-                    <div class="renting__location_vila building_example"><span>ویلا </span></div>
+                    <input id="locations" type="checkbox" class="renting__locations_input">
+                    <!-- Opener -->
+                    <label for="locations" class="renting__locations_opener">
+                        <span>نوع ملک</span>
 
-                    <div class="renting__location_apartment building_example"><span>آپارتمان</span></div>
+                        <i class="renting__locations_opener_icon fa-solid fa-angle-down"></i>
+                    </label>
 
-                    <div class="renting__location_buisness building_example"><span>تجاری</span></div>
+                    <!-- The Building Types -->
+                    <div class="renting__locations_box">
+                        <button class="renting__locations_box_examples"><span>ویلا</span></button>
 
+                        <button class="renting__locations_box_examples"><span>آپارتمان</span></button>
+
+                        <button class="renting__locations_box_examples renting__locations_box_examples--no_border"><span>تجاری </span></button>
+                    </div>
                 </div>
             </div>
 

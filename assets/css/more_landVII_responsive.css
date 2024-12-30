@@ -1,65 +1,17 @@
-@media only screen and (min-width: 1024px){
-    .selling_page {
-        margin-top: 80px;
-    
+@media only screen and (min-width: 1024px) {
+
+    .more_land_page {    
         display: flex;
         align-items: center;
         gap: 20px;
-
-        padding: 0px 70px;
-
     }
-    
-    .selling_page_icon {
+
+    .more_land_page__icon {
         font-size: 40px;
     }
 
-    .selling_page__headline {
-        font-size: 48px;
-    }
-
-    .assurance {
-        align-items: flex-start;
-        text-align: right;
-        gap: 45px;
-    
-        margin-top: 30px;
-    
+    .more_land_page__headline {
         font-size: 40px;
-
-        padding: 0px 100px;
-
-    }
-    
-    .assurance__textI {
-        margin-right: 0px;
-
-        align-self: center;
-
-        font-size: 64px;
-    }
-    
-    .assurance__textII {
-        font-size: 48px;
-    }
-    
-    .assurance__textIII {
-        font-size: 48px;
-    }
-    
-    .confirm {
-        display: flex;
-        justify-content: center;
-    
-        margin-top: 115px;
-    
-    }
-    
-    .confirm__button {
-        width: 571px;
-        height: 93px;
-    
-        font-size: 40px;                
     }
 
     .lands {
@@ -191,6 +143,7 @@
     }
 
     .distance {
-        margin-top: 0;
+        margin-top: 0px;
     }
+
 }

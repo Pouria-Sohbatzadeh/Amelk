@@ -45,7 +45,7 @@
 }
 
 .pay_rent_holder {
-    display: flex;/* Turn this to flex */
+    display: none;/* Turn this to flex */
 
     justify-content: center;
 
@@ -309,7 +309,7 @@
 }
 
 .renting_holder {
-    display: none;/* Turn this to Flex when the ملک برای  اجاره دارم button is clicked on */
+    display: flex;/* Turn this to Flex when the ملک برای  اجاره دارم button is clicked on */
     justify-content: center;
 
     width: 100%;
@@ -334,6 +334,7 @@
     width: 100%;
 
     padding: 0px 20px;
+    
 }
 
 .renting__location_headline {
@@ -342,39 +343,86 @@
     font-weight: 700;
 }
 
-.renting__location_examples {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
+.renting__locations {
+    position: relative;
 
     width: 100%;
-
-    color: var(--last_grey);
-    font-size: 14px;
-    font-weight: 600;
 }
 
-.building_example {
+.renting__locations_input {
+    position: absolute;
+
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+}
+
+.renting__locations_opener {
+    width: 100%;
+    height: 61.4px;
+
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 11.15px;
+
+    background-color: #EBEDFB;
+
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+
+    padding: 0px 20px;
+
+    cursor: pointer;
+}
+
+.renting__locations_opener_icon {
+    color: #FF5C00;
+    font-size: 18px;
+}
+
+.renting__locations_box {
+    height: 143px;
+    width: 100%;
+
+    margin-top: 10px;
+
+    border-radius: 11.15px;
+
+    overflow: hidden;
+
+    display: none;
+    flex-direction: column;
+}
+
+.renting__locations_input:checked ~ .renting__locations_box {
+    display: flex;
+}
+
+.renting__locations_box_examples {
+    padding-right: 10px;
+
+    height: 33%;
+    width: 100%;
+
+    display: flex;
     align-items: center;
 
-    height: 75px;
+    border-bottom: 1px solid #E4E4E4;
 
-    border: 1px solid var(--secondary_grey);
-    border-radius: 16px;
+    font-size: 16px;
+    color: var(--overused_blue);
+
+    cursor: pointer;
+
+    background-color: #EBEDFB;
 }
 
-.renting__location_vila {
-    width: 84px;
-}
-
-.renting__location_apartment {
-    width: 83px;
-}
-
-.renting__location_buisness {
-    width: 85px;
+.renting__locations_box_examples--no_border {
+    border: none;
 }
 
 .renting__forms {
